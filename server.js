@@ -66,7 +66,7 @@ const auth = (req,res,next)=>{
     }
 }
 
-app.get("/home",[auth],(req,res)=>{
+app.get("/vuejs",(req,res)=>{
     eyegear.connect("mongodb+srv://benfranlin:benfranlin@benfranklin.ftdm7ju.mongodb.net/?retryWrites=true&w=majority",
                                             (err,connection)=>{
         if(err) throw err;
@@ -83,7 +83,7 @@ app.get("/home",[auth],(req,res)=>{
 });
 
 
-app.get("/about",[auth],(req,res)=>{
+app.get("/reactjs",(req,res)=>{
     eyegear.connect("mongodb+srv://benfranlin:benfranlin@benfranklin.ftdm7ju.mongodb.net/?retryWrites=true&w=majority",
                                             (err,connection)=>{
         if(err) throw err;
@@ -100,7 +100,7 @@ app.get("/about",[auth],(req,res)=>{
 });
 
 
-app.get("/portfolio",[auth],(req,res)=>{
+app.get("/angular",(req,res)=>{
     eyegear.connect("mongodb+srv://benfranlin:benfranlin@benfranklin.ftdm7ju.mongodb.net/?retryWrites=true&w=majority",
                                             (err,connection)=>{
         if(err) throw err;
